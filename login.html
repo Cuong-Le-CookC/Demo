@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<style>
+ #modallogin .modal-content {
+  background: url(images/login-bg.jpg)no-repeat;
+}
+
+#modallogin .modal-content input.text-input {
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: 1px solid var(--gray-color-300);
+}
+
+#modallogin .checkbox p,
+#modallogin .checkbox p>a {
+  font-size: 1em;
+  color: var(--dark-gray-color);
+}
+
+/*----------------------------------------------*/
+/* 2 SITE STRUCTURE */
+/*----------------------------------------------*/
+
+/* 2.1 Header
+/*----------------------------------------------*/
+.site-header {
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.3s ease-out;
+}
+
+.navbar-toggler svg.navbar-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-nav .nav-item a.nav-link {
+  color: var(--accent-color);
+  font-weight: 700;
+  padding: 0;
+}
+
+/* - Offcanvas
+/*----------------------------------------------*/
+#header-nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* - Top User Icons
+/*----------------------------------------------*/
+@media only screen and (max-width: 991px) {
+  #navbar .user-items {
+    display: none;
+  }
+
+  #header-nav .offcanvas {
+    z-index: 9999;
+    background-color: var(--light-color);
+  }
+
+  #header-nav .offcanvas-end {
+    width: 500px;
+  }
+
+  .offcanvas .offcanvas-body .navbar-nav {
+    align-items: unset !important;
+    padding-left: 20px;
+  }
+
+  .offcanvas .nav-item a.nav-link {
+    font-size: 2em;
+  }
+}
+
+#frm1 { width: 600px; margin: auto; padding: 10px; }
+#frm1 label { color: darkslategray; width: 120px; display: inline-block; }
+#frm1 .txt { width: 450px; padding: 8px; border: 1px solid lightcoral; }
+#frm1 button { width: 120px; height: 40px; }
+#frm1 i.fas{position: relative; left:-30px;cursor: pointer;}
+</style>
+<body class="goto-here">
+  <div class="py-1 bg-black">
+    <div class="container">
+      <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+        <div class="col-lg-12 d-block">
+          <div class="row d-flex">
+            <div class="col-md pr-4 d-flex topper align-items-center">
+              <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+              <span class="text">+84 848 406 188</span>
+            </div>
+            <div class="col-md pr-4 d-flex topper align-items-center">
+              <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+              <span class="text">Cuongle23072001@email.com</span>
+            </div>
+            <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+              <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Minishop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="shop.html">Shop</a>
+              <a class="dropdown-item" href="product-single.html">Single Product</a>
+              <a class="dropdown-item" href="cart.html">Cart</a>
+              <a class="dropdown-item" href="checkout.html">Checkout</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span></a></li>
+      <ul class="navbar-nav">
+      <li class="nav-item" id="login-link">
+        <a href="login.html" class="nav-link">Login</a>
+      </li>
+      <li class="nav-item" style="display: none;" id="user-info">
+        
+        <a href="#" class="nav-link" id="username-display">John Doe</a>
+        <a href="#" class="nav-link" id="logout-link">Logout</a>
+      </li>
+    </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <div class="hero-wrap hero-bread" style="background-image: url('images/bg_6.jpg');">
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <form id="frm1">
+          <h2>Login</h2>
+          <p>
+             
+             <input type="text" class="txt" id="username" onkeyup="daoNutDN()" name="un" 
+             placeholder="Username or Email Address *"autofocus/>
+          </p>
+          <p>
+             
+             <input type="password" class="txt" id="password" onkeyup="daoNutDN()" name="mk" 
+             placeholder="Password" />
+             <i class="fas fa-eye"  onclick="daoTT()"></i>
+          </p>
+          <p>
+             <label></label>
+             <button type="submit" name="btndangnhap" id="btndangnhap" value="nut"> Login </button>
+          </p>
+         </form>
+      </div>
+    </div>
+  </div>
+  
+
+      
+       <div id="message"></div>
+       <div id="welcome-section" style="display: none;">
+        <h1>Welcome, <span id="username-display"></span>!</h1>
+        <button id="logout">Logout</button>
+       <script>
+        
+        function daoNutDN(){
+          let  u = document.getElementById("username").value;
+          let p = document.getElementById("password").value;
+          if (u.length>0 && p.length>0) 
+             document.getElementById("btndangnhap").disabled=false;
+          else
+             document.getElementById("btndangnhap").disabled=true;
+          }
+
+
+          function daoTT() {
+            let mk = document.getElementById("password");
+            mk.type = (mk.type === "password")? "text":"password";
+          }  
+        </script>
+        <script>
+          
+
+              document.querySelector('#frm1').addEventListener('submit',() => {
+                event.preventDefault();
+              let un = document.querySelector('#username').value;
+              let pw = document.querySelector('#password').value;
+       
+              axios.post('https://dummyjson.com/auth/login', {
+                  username: un,
+                  password: pw,
+                  expiresInMins: 30
+              })
+              .then(a => {
+                  localStorage.setItem('user' , JSON.stringify(a.data))
+                  alert('Đăng nhập thành công!');
+                  window.location.href = 'index.html';
+              })
+              .catch(e => {
+                console.error(error);
+              alert('Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin!');
+              })
+            });
+        </script>
+         <script src="js/jquery.min.js"></script>
+         <script src="js/jquery-migrate-3.0.1.min.js"></script>
+         <script src="js/popper.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/jquery.easing.1.3.js"></script>
+         <script src="js/jquery.waypoints.min.js"></script>
+         <script src="js/jquery.stellar.min.js"></script>
+         <script src="js/owl.carousel.min.js"></script>
+         <script src="js/jquery.magnific-popup.min.js"></script>
+         <script src="js/aos.js"></script>
+         <script src="js/jquery.animateNumber.min.js"></script>
+         <script src="js/bootstrap-datepicker.js"></script>
+         <script src="js/scrollax.min.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+         <script src="js/google-map.js"></script>
+         <script src="js/main.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+</body>
+</html>
